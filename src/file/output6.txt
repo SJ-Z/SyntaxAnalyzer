@@ -1,0 +1,170 @@
+第1步：    当前栈：$ S'              待读队列：int id , id ; double id ; char id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：S' --> SS'
+第2步：    当前栈：$ S' S              待读队列：int id , id ; double id ; char id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：S --> A L;
+第3步：    当前栈：$ S' ; L A              待读队列：int id , id ; double id ; char id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：A --> int
+第4步：    当前栈：$ S' ; L int              待读队列：int id , id ; double id ; char id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第5步：    当前栈：$ S' ; L              待读队列：id , id ; double id ; char id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：L --> id L'
+第6步：    当前栈：$ S' ; L' id              待读队列：id , id ; double id ; char id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第7步：    当前栈：$ S' ; L'              待读队列：, id ; double id ; char id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：L' --> ,id L'
+第8步：    当前栈：$ S' ; L' id ,              待读队列：, id ; double id ; char id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第9步：    当前栈：$ S' ; L' id              待读队列：id ; double id ; char id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第10步：    当前栈：$ S' ; L'              待读队列：; double id ; char id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：L' --> ε
+第11步：    当前栈：$ S' ;              待读队列：; double id ; char id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第12步：    当前栈：$ S'              待读队列：double id ; char id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：S' --> SS'
+第13步：    当前栈：$ S' S              待读队列：double id ; char id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：S --> A L;
+第14步：    当前栈：$ S' ; L A              待读队列：double id ; char id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：A --> double
+第15步：    当前栈：$ S' ; L double              待读队列：double id ; char id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第16步：    当前栈：$ S' ; L              待读队列：id ; char id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：L --> id L'
+第17步：    当前栈：$ S' ; L' id              待读队列：id ; char id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第18步：    当前栈：$ S' ; L'              待读队列：; char id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：L' --> ε
+第19步：    当前栈：$ S' ;              待读队列：; char id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第20步：    当前栈：$ S'              待读队列：char id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：S' --> SS'
+第21步：    当前栈：$ S' S              待读队列：char id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：S --> A L;
+第22步：    当前栈：$ S' ; L A              待读队列：char id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：A --> char
+第23步：    当前栈：$ S' ; L char              待读队列：char id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第24步：    当前栈：$ S' ; L              待读队列：id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：L --> id L'
+第25步：    当前栈：$ S' ; L' id              待读队列：id ; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第26步：    当前栈：$ S' ; L'              待读队列：; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：L' --> ε
+第27步：    当前栈：$ S' ;              待读队列：; id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第28步：    当前栈：$ S'              待读队列：id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：S' --> SS'
+第29步：    当前栈：$ S' S              待读队列：id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：S --> id B
+第30步：    当前栈：$ S' B id              待读队列：id = ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第31步：    当前栈：$ S' B              待读队列：= ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：B --> =E;
+第32步：    当前栈：$ S' ; E =              待读队列：= ( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第33步：    当前栈：$ S' ; E              待读队列：( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：E --> TE'
+第34步：    当前栈：$ S' ; E' T              待读队列：( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：T --> FT'
+第35步：    当前栈：$ S' ; E' T' F              待读队列：( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：F --> (E)
+第36步：    当前栈：$ S' ; E' T' ) E (              待读队列：( id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第37步：    当前栈：$ S' ; E' T' ) E              待读队列：id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：E --> TE'
+第38步：    当前栈：$ S' ; E' T' ) E' T              待读队列：id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：T --> FT'
+第39步：    当前栈：$ S' ; E' T' ) E' T' F              待读队列：id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：F --> id
+第40步：    当前栈：$ S' ; E' T' ) E' T' id              待读队列：id + id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第41步：    当前栈：$ S' ; E' T' ) E' T'              待读队列：+ id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：T' --> ε
+第42步：    当前栈：$ S' ; E' T' ) E'              待读队列：+ id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：E' --> ME'
+第43步：    当前栈：$ S' ; E' T' ) E' M              待读队列：+ id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：M --> +T
+第44步：    当前栈：$ S' ; E' T' ) E' T +              待读队列：+ id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第45步：    当前栈：$ S' ; E' T' ) E' T              待读队列：id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：T --> FT'
+第46步：    当前栈：$ S' ; E' T' ) E' T' F              待读队列：id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：F --> id
+第47步：    当前栈：$ S' ; E' T' ) E' T' id              待读队列：id ) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第48步：    当前栈：$ S' ; E' T' ) E' T'              待读队列：) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：T' --> ε
+第49步：    当前栈：$ S' ; E' T' ) E'              待读队列：) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：E' --> ε
+第50步：    当前栈：$ S' ; E' T' )              待读队列：) * num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第51步：    当前栈：$ S' ; E' T'              待读队列：* num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：T' --> NT'
+第52步：    当前栈：$ S' ; E' T' N              待读队列：* num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：N --> *F
+第53步：    当前栈：$ S' ; E' T' F *              待读队列：* num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第54步：    当前栈：$ S' ; E' T' F              待读队列：num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：F --> num
+第55步：    当前栈：$ S' ; E' T' num              待读队列：num ; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第56步：    当前栈：$ S' ; E' T'              待读队列：; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：T' --> ε
+第57步：    当前栈：$ S' ; E'              待读队列：; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：E' --> ε
+第58步：    当前栈：$ S' ;              待读队列：; id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第59步：    当前栈：$ S'              待读队列：id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：S' --> SS'
+第60步：    当前栈：$ S' S              待读队列：id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：S --> id B
+第61步：    当前栈：$ S' B id              待读队列：id ( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第62步：    当前栈：$ S' B              待读队列：( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：B --> (L);
+第63步：    当前栈：$ S' ; ) L (              待读队列：( id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第64步：    当前栈：$ S' ; ) L              待读队列：id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：L --> id L'
+第65步：    当前栈：$ S' ; ) L' id              待读队列：id , id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第66步：    当前栈：$ S' ; ) L'              待读队列：, id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：L' --> ,id L'
+第67步：    当前栈：$ S' ; ) L' id ,              待读队列：, id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第68步：    当前栈：$ S' ; ) L' id              待读队列：id , id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第69步：    当前栈：$ S' ; ) L'              待读队列：, id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：L' --> ,id L'
+第70步：    当前栈：$ S' ; ) L' id ,              待读队列：, id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第71步：    当前栈：$ S' ; ) L' id              待读队列：id ) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第72步：    当前栈：$ S' ; ) L'              待读队列：) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：L' --> ε
+第73步：    当前栈：$ S' ; )              待读队列：) ; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第74步：    当前栈：$ S' ;              待读队列：; if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第75步：    当前栈：$ S'              待读队列：if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：S' --> SS'
+第76步：    当前栈：$ S' S              待读队列：if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：S --> if(X){S}Q
+第77步：    当前栈：$ S' Q } S { ) X ( if              待读队列：if ( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第78步：    当前栈：$ S' Q } S { ) X (              待读队列：( id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第79步：    当前栈：$ S' Q } S { ) X              待读队列：id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：X --> ERE
+第80步：    当前栈：$ S' Q } S { ) E R E              待读队列：id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：E --> TE'
+第81步：    当前栈：$ S' Q } S { ) E R E' T              待读队列：id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：T --> FT'
+第82步：    当前栈：$ S' Q } S { ) E R E' T' F              待读队列：id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：F --> id
+第83步：    当前栈：$ S' Q } S { ) E R E' T' id              待读队列：id > num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第84步：    当前栈：$ S' Q } S { ) E R E' T'              待读队列：> num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：T' --> ε
+第85步：    当前栈：$ S' Q } S { ) E R E'              待读队列：> num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：E' --> ε
+第86步：    当前栈：$ S' Q } S { ) E R              待读队列：> num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：R --> >
+第87步：    当前栈：$ S' Q } S { ) E >              待读队列：> num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第88步：    当前栈：$ S' Q } S { ) E              待读队列：num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：E --> TE'
+第89步：    当前栈：$ S' Q } S { ) E' T              待读队列：num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：T --> FT'
+第90步：    当前栈：$ S' Q } S { ) E' T' F              待读队列：num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：F --> num
+第91步：    当前栈：$ S' Q } S { ) E' T' num              待读队列：num ) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第92步：    当前栈：$ S' Q } S { ) E' T'              待读队列：) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：T' --> ε
+第93步：    当前栈：$ S' Q } S { ) E'              待读队列：) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：E' --> ε
+第94步：    当前栈：$ S' Q } S { )              待读队列：) { id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第95步：    当前栈：$ S' Q } S {              待读队列：{ id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第96步：    当前栈：$ S' Q } S              待读队列：id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：S --> id B
+第97步：    当前栈：$ S' Q } B id              待读队列：id = num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第98步：    当前栈：$ S' Q } B              待读队列：= num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：B --> =E;
+第99步：    当前栈：$ S' Q } ; E =              待读队列：= num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第100步：    当前栈：$ S' Q } ; E              待读队列：num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：E --> TE'
+第101步：    当前栈：$ S' Q } ; E' T              待读队列：num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：T --> FT'
+第102步：    当前栈：$ S' Q } ; E' T' F              待读队列：num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：F --> num
+第103步：    当前栈：$ S' Q } ; E' T' num              待读队列：num ; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第104步：    当前栈：$ S' Q } ; E' T'              待读队列：; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：T' --> ε
+第105步：    当前栈：$ S' Q } ; E'              待读队列：; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：E' --> ε
+第106步：    当前栈：$ S' Q } ;              待读队列：; } else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第107步：    当前栈：$ S' Q }              待读队列：} else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第108步：    当前栈：$ S' Q              待读队列：else { id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：Q --> else{S}
+第109步：    当前栈：$ S' } S { else              待读队列：else { id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第110步：    当前栈：$ S' } S {              待读队列：{ id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第111步：    当前栈：$ S' } S              待读队列：id = id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：S --> id B
+第112步：    当前栈：$ S' } B id              待读队列：id = id / num ; } while ( id < num ) { id = id + num ; } $ 
+第113步：    当前栈：$ S' } B              待读队列：= id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：B --> =E;
+第114步：    当前栈：$ S' } ; E =              待读队列：= id / num ; } while ( id < num ) { id = id + num ; } $ 
+第115步：    当前栈：$ S' } ; E              待读队列：id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：E --> TE'
+第116步：    当前栈：$ S' } ; E' T              待读队列：id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：T --> FT'
+第117步：    当前栈：$ S' } ; E' T' F              待读队列：id / num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：F --> id
+第118步：    当前栈：$ S' } ; E' T' id              待读队列：id / num ; } while ( id < num ) { id = id + num ; } $ 
+第119步：    当前栈：$ S' } ; E' T'              待读队列：/ num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：T' --> NT'
+第120步：    当前栈：$ S' } ; E' T' N              待读队列：/ num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：N --> /F
+第121步：    当前栈：$ S' } ; E' T' F /              待读队列：/ num ; } while ( id < num ) { id = id + num ; } $ 
+第122步：    当前栈：$ S' } ; E' T' F              待读队列：num ; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：F --> num
+第123步：    当前栈：$ S' } ; E' T' num              待读队列：num ; } while ( id < num ) { id = id + num ; } $ 
+第124步：    当前栈：$ S' } ; E' T'              待读队列：; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：T' --> ε
+第125步：    当前栈：$ S' } ; E'              待读队列：; } while ( id < num ) { id = id + num ; } $          下一步所用产生式：E' --> ε
+第126步：    当前栈：$ S' } ;              待读队列：; } while ( id < num ) { id = id + num ; } $ 
+第127步：    当前栈：$ S' }              待读队列：} while ( id < num ) { id = id + num ; } $ 
+第128步：    当前栈：$ S'              待读队列：while ( id < num ) { id = id + num ; } $          下一步所用产生式：S' --> SS'
+第129步：    当前栈：$ S' S              待读队列：while ( id < num ) { id = id + num ; } $          下一步所用产生式：S --> while(X){S}
+第130步：    当前栈：$ S' } S { ) X ( while              待读队列：while ( id < num ) { id = id + num ; } $ 
+第131步：    当前栈：$ S' } S { ) X (              待读队列：( id < num ) { id = id + num ; } $ 
+第132步：    当前栈：$ S' } S { ) X              待读队列：id < num ) { id = id + num ; } $          下一步所用产生式：X --> ERE
+第133步：    当前栈：$ S' } S { ) E R E              待读队列：id < num ) { id = id + num ; } $          下一步所用产生式：E --> TE'
+第134步：    当前栈：$ S' } S { ) E R E' T              待读队列：id < num ) { id = id + num ; } $          下一步所用产生式：T --> FT'
+第135步：    当前栈：$ S' } S { ) E R E' T' F              待读队列：id < num ) { id = id + num ; } $          下一步所用产生式：F --> id
+第136步：    当前栈：$ S' } S { ) E R E' T' id              待读队列：id < num ) { id = id + num ; } $ 
+第137步：    当前栈：$ S' } S { ) E R E' T'              待读队列：< num ) { id = id + num ; } $          下一步所用产生式：T' --> ε
+第138步：    当前栈：$ S' } S { ) E R E'              待读队列：< num ) { id = id + num ; } $          下一步所用产生式：E' --> ε
+第139步：    当前栈：$ S' } S { ) E R              待读队列：< num ) { id = id + num ; } $          下一步所用产生式：R --> <
+第140步：    当前栈：$ S' } S { ) E <              待读队列：< num ) { id = id + num ; } $ 
+第141步：    当前栈：$ S' } S { ) E              待读队列：num ) { id = id + num ; } $          下一步所用产生式：E --> TE'
+第142步：    当前栈：$ S' } S { ) E' T              待读队列：num ) { id = id + num ; } $          下一步所用产生式：T --> FT'
+第143步：    当前栈：$ S' } S { ) E' T' F              待读队列：num ) { id = id + num ; } $          下一步所用产生式：F --> num
+第144步：    当前栈：$ S' } S { ) E' T' num              待读队列：num ) { id = id + num ; } $ 
+第145步：    当前栈：$ S' } S { ) E' T'              待读队列：) { id = id + num ; } $          下一步所用产生式：T' --> ε
+第146步：    当前栈：$ S' } S { ) E'              待读队列：) { id = id + num ; } $          下一步所用产生式：E' --> ε
+第147步：    当前栈：$ S' } S { )              待读队列：) { id = id + num ; } $ 
+第148步：    当前栈：$ S' } S {              待读队列：{ id = id + num ; } $ 
+第149步：    当前栈：$ S' } S              待读队列：id = id + num ; } $          下一步所用产生式：S --> id B
+第150步：    当前栈：$ S' } B id              待读队列：id = id + num ; } $ 
+第151步：    当前栈：$ S' } B              待读队列：= id + num ; } $          下一步所用产生式：B --> =E;
+第152步：    当前栈：$ S' } ; E =              待读队列：= id + num ; } $ 
+第153步：    当前栈：$ S' } ; E              待读队列：id + num ; } $          下一步所用产生式：E --> TE'
+第154步：    当前栈：$ S' } ; E' T              待读队列：id + num ; } $          下一步所用产生式：T --> FT'
+第155步：    当前栈：$ S' } ; E' T' F              待读队列：id + num ; } $          下一步所用产生式：F --> id
+第156步：    当前栈：$ S' } ; E' T' id              待读队列：id + num ; } $ 
+第157步：    当前栈：$ S' } ; E' T'              待读队列：+ num ; } $          下一步所用产生式：T' --> ε
+第158步：    当前栈：$ S' } ; E'              待读队列：+ num ; } $          下一步所用产生式：E' --> ME'
+第159步：    当前栈：$ S' } ; E' M              待读队列：+ num ; } $          下一步所用产生式：M --> +T
+第160步：    当前栈：$ S' } ; E' T +              待读队列：+ num ; } $ 
+第161步：    当前栈：$ S' } ; E' T              待读队列：num ; } $          下一步所用产生式：T --> FT'
+第162步：    当前栈：$ S' } ; E' T' F              待读队列：num ; } $          下一步所用产生式：F --> num
+第163步：    当前栈：$ S' } ; E' T' num              待读队列：num ; } $ 
+第164步：    当前栈：$ S' } ; E' T'              待读队列：; } $          下一步所用产生式：T' --> ε
+第165步：    当前栈：$ S' } ; E'              待读队列：; } $          下一步所用产生式：E' --> ε
+第166步：    当前栈：$ S' } ;              待读队列：; } $ 
+第167步：    当前栈：$ S' }              待读队列：} $ 
+第168步：    当前栈：$ S'              待读队列：$          下一步所用产生式：S' --> ε
+第169步：    当前栈：$              待读队列：$ 
+Accept

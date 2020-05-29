@@ -1,0 +1,53 @@
+第1步：    当前栈：$ S              待读队列：if ( id > num ) { id = num ; } else { id = id / num ; } $          下一步所用产生式：S --> if(X){S}Q
+第2步：    当前栈：$ Q } S { ) X ( if              待读队列：if ( id > num ) { id = num ; } else { id = id / num ; } $ 
+第3步：    当前栈：$ Q } S { ) X (              待读队列：( id > num ) { id = num ; } else { id = id / num ; } $ 
+第4步：    当前栈：$ Q } S { ) X              待读队列：id > num ) { id = num ; } else { id = id / num ; } $          下一步所用产生式：X --> ERE
+第5步：    当前栈：$ Q } S { ) E R E              待读队列：id > num ) { id = num ; } else { id = id / num ; } $          下一步所用产生式：E --> TE'
+第6步：    当前栈：$ Q } S { ) E R E' T              待读队列：id > num ) { id = num ; } else { id = id / num ; } $          下一步所用产生式：T --> FT'
+第7步：    当前栈：$ Q } S { ) E R E' T' F              待读队列：id > num ) { id = num ; } else { id = id / num ; } $          下一步所用产生式：F --> id
+第8步：    当前栈：$ Q } S { ) E R E' T' id              待读队列：id > num ) { id = num ; } else { id = id / num ; } $ 
+第9步：    当前栈：$ Q } S { ) E R E' T'              待读队列：> num ) { id = num ; } else { id = id / num ; } $          下一步所用产生式：T' --> ε
+第10步：    当前栈：$ Q } S { ) E R E'              待读队列：> num ) { id = num ; } else { id = id / num ; } $          下一步所用产生式：E' --> ε
+第11步：    当前栈：$ Q } S { ) E R              待读队列：> num ) { id = num ; } else { id = id / num ; } $          下一步所用产生式：R --> >
+第12步：    当前栈：$ Q } S { ) E >              待读队列：> num ) { id = num ; } else { id = id / num ; } $ 
+第13步：    当前栈：$ Q } S { ) E              待读队列：num ) { id = num ; } else { id = id / num ; } $          下一步所用产生式：E --> TE'
+第14步：    当前栈：$ Q } S { ) E' T              待读队列：num ) { id = num ; } else { id = id / num ; } $          下一步所用产生式：T --> FT'
+第15步：    当前栈：$ Q } S { ) E' T' F              待读队列：num ) { id = num ; } else { id = id / num ; } $          下一步所用产生式：F --> num
+第16步：    当前栈：$ Q } S { ) E' T' num              待读队列：num ) { id = num ; } else { id = id / num ; } $ 
+第17步：    当前栈：$ Q } S { ) E' T'              待读队列：) { id = num ; } else { id = id / num ; } $          下一步所用产生式：T' --> ε
+第18步：    当前栈：$ Q } S { ) E'              待读队列：) { id = num ; } else { id = id / num ; } $          下一步所用产生式：E' --> ε
+第19步：    当前栈：$ Q } S { )              待读队列：) { id = num ; } else { id = id / num ; } $ 
+第20步：    当前栈：$ Q } S {              待读队列：{ id = num ; } else { id = id / num ; } $ 
+第21步：    当前栈：$ Q } S              待读队列：id = num ; } else { id = id / num ; } $          下一步所用产生式：S --> id B
+第22步：    当前栈：$ Q } B id              待读队列：id = num ; } else { id = id / num ; } $ 
+第23步：    当前栈：$ Q } B              待读队列：= num ; } else { id = id / num ; } $          下一步所用产生式：B --> =E;
+第24步：    当前栈：$ Q } ; E =              待读队列：= num ; } else { id = id / num ; } $ 
+第25步：    当前栈：$ Q } ; E              待读队列：num ; } else { id = id / num ; } $          下一步所用产生式：E --> TE'
+第26步：    当前栈：$ Q } ; E' T              待读队列：num ; } else { id = id / num ; } $          下一步所用产生式：T --> FT'
+第27步：    当前栈：$ Q } ; E' T' F              待读队列：num ; } else { id = id / num ; } $          下一步所用产生式：F --> num
+第28步：    当前栈：$ Q } ; E' T' num              待读队列：num ; } else { id = id / num ; } $ 
+第29步：    当前栈：$ Q } ; E' T'              待读队列：; } else { id = id / num ; } $          下一步所用产生式：T' --> ε
+第30步：    当前栈：$ Q } ; E'              待读队列：; } else { id = id / num ; } $          下一步所用产生式：E' --> ε
+第31步：    当前栈：$ Q } ;              待读队列：; } else { id = id / num ; } $ 
+第32步：    当前栈：$ Q }              待读队列：} else { id = id / num ; } $ 
+第33步：    当前栈：$ Q              待读队列：else { id = id / num ; } $          下一步所用产生式：Q --> else{S}
+第34步：    当前栈：$ } S { else              待读队列：else { id = id / num ; } $ 
+第35步：    当前栈：$ } S {              待读队列：{ id = id / num ; } $ 
+第36步：    当前栈：$ } S              待读队列：id = id / num ; } $          下一步所用产生式：S --> id B
+第37步：    当前栈：$ } B id              待读队列：id = id / num ; } $ 
+第38步：    当前栈：$ } B              待读队列：= id / num ; } $          下一步所用产生式：B --> =E;
+第39步：    当前栈：$ } ; E =              待读队列：= id / num ; } $ 
+第40步：    当前栈：$ } ; E              待读队列：id / num ; } $          下一步所用产生式：E --> TE'
+第41步：    当前栈：$ } ; E' T              待读队列：id / num ; } $          下一步所用产生式：T --> FT'
+第42步：    当前栈：$ } ; E' T' F              待读队列：id / num ; } $          下一步所用产生式：F --> id
+第43步：    当前栈：$ } ; E' T' id              待读队列：id / num ; } $ 
+第44步：    当前栈：$ } ; E' T'              待读队列：/ num ; } $          下一步所用产生式：T' --> NT'
+第45步：    当前栈：$ } ; E' T' N              待读队列：/ num ; } $          下一步所用产生式：N --> /F
+第46步：    当前栈：$ } ; E' T' F /              待读队列：/ num ; } $ 
+第47步：    当前栈：$ } ; E' T' F              待读队列：num ; } $          下一步所用产生式：F --> num
+第48步：    当前栈：$ } ; E' T' num              待读队列：num ; } $ 
+第49步：    当前栈：$ } ; E' T'              待读队列：; } $          下一步所用产生式：T' --> ε
+第50步：    当前栈：$ } ; E'              待读队列：; } $          下一步所用产生式：E' --> ε
+第51步：    当前栈：$ } ;              待读队列：; } $ 
+第52步：    当前栈：$ }              待读队列：} $ 
+第53步：    当前栈：$              待读队列：$ 

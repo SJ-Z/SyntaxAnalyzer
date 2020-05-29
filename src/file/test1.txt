@@ -1,0 +1,3 @@
+int id1,id2;
+double id3;
+char id4;

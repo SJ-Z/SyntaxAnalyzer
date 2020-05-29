@@ -1,0 +1,13 @@
+int id1,id2;
+double id3;
+char id4;
+id1 = (id2 + id3)*3;
+id4(id1,id2,id3);
+if(id1 > 3){
+    id1 = 3;
+}else{
+    id1 = id1 / 3;
+}
+while(id2 < 5) {
+    id2 = id2 + 5;
+}

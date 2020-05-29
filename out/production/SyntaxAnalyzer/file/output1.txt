@@ -1,0 +1,30 @@
+第1步：    当前栈：$ S'              待读队列：int id , id ; double id ; char id ; $          下一步所用产生式：S' --> SS'
+第2步：    当前栈：$ S' S              待读队列：int id , id ; double id ; char id ; $          下一步所用产生式：S --> A L;
+第3步：    当前栈：$ S' ; L A              待读队列：int id , id ; double id ; char id ; $          下一步所用产生式：A --> int
+第4步：    当前栈：$ S' ; L int              待读队列：int id , id ; double id ; char id ; $ 
+第5步：    当前栈：$ S' ; L              待读队列：id , id ; double id ; char id ; $          下一步所用产生式：L --> id L'
+第6步：    当前栈：$ S' ; L' id              待读队列：id , id ; double id ; char id ; $ 
+第7步：    当前栈：$ S' ; L'              待读队列：, id ; double id ; char id ; $          下一步所用产生式：L' --> ,id L'
+第8步：    当前栈：$ S' ; L' id ,              待读队列：, id ; double id ; char id ; $ 
+第9步：    当前栈：$ S' ; L' id              待读队列：id ; double id ; char id ; $ 
+第10步：    当前栈：$ S' ; L'              待读队列：; double id ; char id ; $          下一步所用产生式：L' --> ε
+第11步：    当前栈：$ S' ;              待读队列：; double id ; char id ; $ 
+第12步：    当前栈：$ S'              待读队列：double id ; char id ; $          下一步所用产生式：S' --> SS'
+第13步：    当前栈：$ S' S              待读队列：double id ; char id ; $          下一步所用产生式：S --> A L;
+第14步：    当前栈：$ S' ; L A              待读队列：double id ; char id ; $          下一步所用产生式：A --> double
+第15步：    当前栈：$ S' ; L double              待读队列：double id ; char id ; $ 
+第16步：    当前栈：$ S' ; L              待读队列：id ; char id ; $          下一步所用产生式：L --> id L'
+第17步：    当前栈：$ S' ; L' id              待读队列：id ; char id ; $ 
+第18步：    当前栈：$ S' ; L'              待读队列：; char id ; $          下一步所用产生式：L' --> ε
+第19步：    当前栈：$ S' ;              待读队列：; char id ; $ 
+第20步：    当前栈：$ S'              待读队列：char id ; $          下一步所用产生式：S' --> SS'
+第21步：    当前栈：$ S' S              待读队列：char id ; $          下一步所用产生式：S --> A L;
+第22步：    当前栈：$ S' ; L A              待读队列：char id ; $          下一步所用产生式：A --> char
+第23步：    当前栈：$ S' ; L char              待读队列：char id ; $ 
+第24步：    当前栈：$ S' ; L              待读队列：id ; $          下一步所用产生式：L --> id L'
+第25步：    当前栈：$ S' ; L' id              待读队列：id ; $ 
+第26步：    当前栈：$ S' ; L'              待读队列：; $          下一步所用产生式：L' --> ε
+第27步：    当前栈：$ S' ;              待读队列：; $ 
+第28步：    当前栈：$ S'              待读队列：$          下一步所用产生式：S' --> ε
+第29步：    当前栈：$              待读队列：$ 
+Accept
